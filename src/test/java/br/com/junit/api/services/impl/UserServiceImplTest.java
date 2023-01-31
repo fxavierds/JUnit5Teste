@@ -5,7 +5,6 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.doNothing;
-import static org.mockito.Mockito.mockitoSession;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -14,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -35,13 +33,9 @@ class UserServiceImplTest {
 	private static final String MENSAGEM = "Objeto não encontrado";
 
 	private static final int INDEX = 0;
-
 	private static final Integer ID = 1;
-
 	private static final String NOME = "Xavier";
-
 	private static final String EMAIL = "xavier@gmail.com";
-
 	private static final String SENHA = "123";
 
 	@InjectMocks
